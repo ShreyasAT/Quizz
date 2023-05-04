@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/question2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is the currency of Japan?"
+        android:textSize="24sp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true" />
+
+    <RadioGroup
+        android:id="@+id/options2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/question2"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:id="@+id/option2a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dollar" />
+
+        <RadioButton
+            android:id="@+id/option2b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Euro" />
+
+        <RadioButton
+            android:id="@+id/option2c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yen" />
+
+        <RadioButton
+            android:id="@+id/option2d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pound" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Previous"
+        android:layout_below="@+id/options2"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentLeft="true"
+        android:onClick="goToPreviousPage" />
+
+    <Button
+        android:id="@+id/next2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_below="@+id/options2"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentRight="true"
+        android:onClick="goToNextPage" />
+
+</RelativeLayout>

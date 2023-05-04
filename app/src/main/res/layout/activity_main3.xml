@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/question3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is the capital of France?"
+        android:textSize="24sp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true" />
+
+    <RadioGroup
+        android:id="@+id/options3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/question3"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:id="@+id/option3a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Madrid" />
+
+        <RadioButton
+            android:id="@+id/option3b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Berlin" />
+
+        <RadioButton
+            android:id="@+id/option3c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="London" />
+
+        <RadioButton
+            android:id="@+id/option3d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paris" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/previous3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Previous"
+        android:layout_below="@+id/options3"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentLeft="true"
+        android:onClick="goToPreviousPage" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_below="@+id/options3"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="submitQuiz" />
+
+</RelativeLayout>

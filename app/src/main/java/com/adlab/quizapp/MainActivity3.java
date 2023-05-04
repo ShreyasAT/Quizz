@@ -49,6 +49,8 @@ public class MainActivity3 extends Activity {
                 intent.putExtra("answer1", getIntent().getStringExtra("answer1"));
                 intent.putExtra("answer2", getIntent().getStringExtra("answer2"));
                 intent.putExtra("answer3", answer);
+                intent.putExtra("ans1",MainActivity.correctans);
+                intent.putExtra("ans2",MainActivity.wrongans);
 
                 startActivity(intent);
             }

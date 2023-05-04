@@ -53,6 +53,8 @@ public class MainActivity2 extends Activity {
                 Intent intent = new Intent(MainActivity2.this, MainActivity3.class);
                 intent.putExtra("answer1", getIntent().getStringExtra("answer1"));
                 intent.putExtra("answer2", answer);
+                intent.putExtra("correctanswer",MainActivity.correctans);
+                intent.putExtra("wrongans",MainActivity.wrongans);
                 startActivity(intent);
             }
         });

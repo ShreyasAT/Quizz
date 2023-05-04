@@ -29,8 +29,8 @@ public class MainActivity4 extends AppCompatActivity {
             wrongCount = bundle.getInt("wrongCount");
         }
 
-        correctTv.setText(String.valueOf(correctCount));
-        wrongTv.setText(String.valueOf(wrongCount));
+        correctTv.setText(String.valueOf(MainActivity.correctans));
+        wrongTv.setText(String.valueOf(MainActivity.wrongans));
 
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override

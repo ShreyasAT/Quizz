@@ -8,40 +8,45 @@
         android:id="@+id/question_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="What is the capital of France?"
-        android:textSize="20sp"
-        android:layout_centerInParent="true"/>
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="546dp"
+        android:text="What is the capital of India?"
+        android:textSize="20sp" />
 
     <RadioGroup
         android:id="@+id/options_group"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/question_textview"
-        android:layout_centerHorizontal="true">
+        android:layout_width="205dp"
+        android:layout_height="259dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="137dp"
+        android:layout_marginBottom="181dp">
 
         <RadioButton
             android:id="@+id/option1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New York"/>
+            android:text="DELHI" />
 
         <RadioButton
             android:id="@+id/option2"
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:text="London"/>
+            android:text="KARNATAKA" />
 
         <RadioButton
             android:id="@+id/option3"
-            android:layout_width="wrap_content"
+            android:layout_width="171dp"
             android:layout_height="wrap_content"
-            android:text="Paris"/>
+            android:text="UTTAR PRADESH" />
 
         <RadioButton
             android:id="@+id/option4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tokyo"/>
+            android:text="ODISSA" />
 
     </RadioGroup>
 
@@ -49,10 +54,11 @@
         android:id="@+id/next_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Next"
-        android:layout_below="@id/options_group"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"/>
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="285dp"
+        android:text="Next" />
 
 </RelativeLayout>
 

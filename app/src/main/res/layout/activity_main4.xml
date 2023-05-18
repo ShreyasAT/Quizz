@@ -4,11 +4,24 @@
     android:layout_height="match_parent">
 
     <TextView
+        android:id="@+id/textView2"
+        android:layout_width="94dp"
+        android:layout_height="33dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="270dp"
+        android:layout_marginBottom="316dp"
+        android:text="Wrong"
+        android:textSize="24sp" />
+
+    <TextView
         android:id="@+id/result_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="125dp"
         android:text="Quiz Results"
         android:textSize="30sp" />
 
@@ -16,19 +29,24 @@
         android:id="@+id/correct_answers"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/result_title"
-        android:layout_marginTop="30dp"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="166dp"
+        android:layout_marginBottom="414dp"
         android:text="Correct Answers: "
+        android:textAlignment="viewStart"
         android:textSize="24sp" />
 
     <TextView
         android:id="@+id/wrong_answers"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/correct_answers"
-        android:layout_marginTop="10dp"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="191dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="313dp"
         android:text="Wrong Answers: "
         android:textSize="24sp" />
 
@@ -36,10 +54,21 @@
         android:id="@+id/previous_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/wrong_answers"
-        android:layout_marginTop="30dp"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="160dp"
+        android:layout_marginBottom="176dp"
         android:text="Previous" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="94dp"
+        android:layout_height="33dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="267dp"
+        android:layout_marginBottom="416dp"
+        android:text="Correct:"
+        android:textSize="24sp" />
 
 </RelativeLayout>

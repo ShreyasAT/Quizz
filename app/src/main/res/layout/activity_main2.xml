@@ -7,62 +7,67 @@
         android:id="@+id/question2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="What is the currency of Japan?"
-        android:textSize="24sp"
-        android:layout_marginTop="50dp"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="134dp"
+        android:layout_marginEnd="122dp"
+        android:text="Where is Hassan?"
+        android:textSize="24sp" />
 
     <RadioGroup
         android:id="@+id/options2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/question2"
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true">
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="158dp"
+        android:layout_marginBottom="319dp">
 
         <RadioButton
             android:id="@+id/option2a"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Dollar" />
+            android:text="Rajastan" />
 
         <RadioButton
             android:id="@+id/option2b"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Euro" />
+            android:text="Jammu" />
 
         <RadioButton
             android:id="@+id/option2c"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Yen" />
+            android:text="Karnataka" />
 
         <RadioButton
             android:id="@+id/option2d"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pound" />
+            android:text="Sikkim" />
     </RadioGroup>
 
     <Button
         android:id="@+id/previous"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Previous"
-        android:layout_below="@+id/options2"
-        android:layout_marginTop="50dp"
         android:layout_alignParentLeft="true"
-        android:onClick="goToPreviousPage" />
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="75dp"
+        android:layout_marginBottom="203dp"
+        android:onClick="goToPreviousPage"
+        android:text="Previous" />
 
     <Button
         android:id="@+id/next2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Next"
-        android:layout_below="@+id/options2"
-        android:layout_marginTop="50dp"
         android:layout_alignParentRight="true"
-        android:onClick="goToNextPage" />
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="69dp"
+        android:layout_marginBottom="201dp"
+        android:onClick="goToNextPage"
+        android:text="Next" />
 
 </RelativeLayout>

@@ -12,24 +12,28 @@ import android.widget.Toast;
 
 public class MainActivity3 extends Activity {
 
-    private RadioGroup optionsGroup;
+    private RadioGroup optionsGroup3;
     private RadioButton selectedOption;
     private Button nextButton;
     private Button previousButton;
+    private RadioButton correct3;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
 
-        optionsGroup = findViewById(R.id.options3);
+        optionsGroup3 = findViewById(R.id.options3);
         nextButton = findViewById(R.id.submit);
         previousButton = findViewById(R.id.previous3);
+        int selectedOptionId = optionsGroup3.getCheckedRadioButtonId();
+        correct3= findViewById(R.id.option3b);
 
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int selectedOptionId = optionsGroup.getCheckedRadioButtonId();
+                int selectedOptionId = optionsGroup3.getCheckedRadioButtonId();
 
                 if (selectedOptionId == -1) {
                     Toast.makeText(MainActivity3.this, "Please select an option", Toast.LENGTH_SHORT).show();
@@ -39,7 +43,7 @@ public class MainActivity3 extends Activity {
                 selectedOption = findViewById(selectedOptionId);
                 String answer = selectedOption.getText().toString();
 
-                if(answer=="Paris"){
+                if(answer==correct3.getText().toString()){
                     MainActivity.correctans++;
                 }
                 else{

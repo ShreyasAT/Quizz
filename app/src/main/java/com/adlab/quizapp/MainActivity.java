@@ -14,6 +14,7 @@ public class MainActivity extends Activity {
     public static int correctans=0,wrongans=0;
     private RadioGroup optionsGroup;
     private RadioButton selectedOption;
+    private RadioButton correct1;
     private Button nextButton;
     private Button previousButton;
 
@@ -31,7 +32,7 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 int selectedOptionId = optionsGroup.getCheckedRadioButtonId();
-
+                correct1= findViewById(R.id.option1);
                 if (selectedOptionId == -1) {
                     Toast.makeText(MainActivity.this, "Please select an option", Toast.LENGTH_SHORT).show();
                     return;
@@ -39,7 +40,7 @@ public class MainActivity extends Activity {
 
                 selectedOption = findViewById(selectedOptionId);
                 String answer = selectedOption.getText().toString();
-                if(answer=="Paris"){
+                if(answer==correct1.getText().toString()){
                     correctans++;
                 }
                 else{

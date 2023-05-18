@@ -7,62 +7,67 @@
         android:id="@+id/question3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="What is the capital of France?"
-        android:textSize="24sp"
-        android:layout_marginTop="50dp"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="117dp"
+        android:layout_marginEnd="19dp"
+        android:text="Who is the Prime MInister of India?"
+        android:textSize="24sp" />
 
     <RadioGroup
         android:id="@+id/options3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/question3"
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true">
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="157dp"
+        android:layout_marginBottom="341dp">
 
         <RadioButton
             android:id="@+id/option3a"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Madrid" />
+            android:text="Mamata Banerji" />
 
         <RadioButton
             android:id="@+id/option3b"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Berlin" />
+            android:text="Narendra Modi" />
 
         <RadioButton
             android:id="@+id/option3c"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="London" />
+            android:text="Rahul Gandhi" />
 
         <RadioButton
             android:id="@+id/option3d"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Paris" />
+            android:text="Yogi Adidhyanath" />
     </RadioGroup>
 
     <Button
         android:id="@+id/previous3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Previous"
-        android:layout_below="@+id/options3"
-        android:layout_marginTop="50dp"
         android:layout_alignParentLeft="true"
-        android:onClick="goToPreviousPage" />
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="88dp"
+        android:layout_marginBottom="176dp"
+        android:onClick="goToPreviousPage"
+        android:text="Previous" />
 
     <Button
         android:id="@+id/submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Submit"
-        android:layout_below="@+id/options3"
-        android:layout_marginTop="50dp"
-        android:layout_centerHorizontal="true"
-        android:onClick="submitQuiz" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="174dp"
+        android:onClick="submitQuiz"
+        android:text="Submit" />
 
 </RelativeLayout>

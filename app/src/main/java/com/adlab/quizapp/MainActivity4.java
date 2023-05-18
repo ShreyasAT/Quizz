@@ -31,7 +31,8 @@ public class MainActivity4 extends AppCompatActivity {
 
         correctTv.setText(String.valueOf(MainActivity.correctans));
         wrongTv.setText(String.valueOf(MainActivity.wrongans));
-
+        MainActivity.correctans=0;
+        MainActivity.wrongans=0;
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
